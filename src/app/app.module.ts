@@ -11,6 +11,7 @@ import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
 import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
 import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { EmpViewComponent } from './emp-view/emp-view.component';
 
 const approutes:Routes=[
   {
@@ -32,7 +33,8 @@ const approutes:Routes=[
     AdminNavbarComponent,
     AdmindashboardComponent,
     AddEmployeeComponent,
-    NavbarComponent
+    NavbarComponent,
+    EmpViewComponent
   ],
   imports: [
     BrowserModule,
