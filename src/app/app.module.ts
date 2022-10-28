@@ -7,16 +7,20 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
+import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
 
 const approutes:Routes=[
   {
     path:"",component:AdminLoginComponent
   }
+  
+  
 ]
 @NgModule({
   declarations: [
     AppComponent,
-    AdminLoginComponent
+    AdminLoginComponent,
+    AdminNavbarComponent
   ],
   imports: [
     BrowserModule,
