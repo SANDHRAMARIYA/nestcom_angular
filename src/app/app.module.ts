@@ -10,6 +10,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
 import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
 import { AddEmployeeComponent } from './add-employee/add-employee.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const approutes:Routes=[
   {
@@ -30,7 +31,8 @@ const approutes:Routes=[
     AdminLoginComponent,
     AdminNavbarComponent,
     AdmindashboardComponent,
-    AddEmployeeComponent
+    AddEmployeeComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
