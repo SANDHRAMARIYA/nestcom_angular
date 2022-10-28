@@ -8,10 +8,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
+import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
 
 const approutes:Routes=[
   {
     path:"",component:AdminLoginComponent
+  },
+  {
+    path:"adminDashbord",component:AdmindashboardComponent
   }
   
   
@@ -20,7 +24,8 @@ const approutes:Routes=[
   declarations: [
     AppComponent,
     AdminLoginComponent,
-    AdminNavbarComponent
+    AdminNavbarComponent,
+    AdmindashboardComponent
   ],
   imports: [
     BrowserModule,
