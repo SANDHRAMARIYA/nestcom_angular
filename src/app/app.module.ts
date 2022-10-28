@@ -17,6 +17,9 @@ const approutes:Routes=[
   },
   {
     path:"adminDashbord",component:AdmindashboardComponent
+  },
+  {
+    path:"addEmp",component:AddEmployeeComponent
   }
   
   
