@@ -16,6 +16,7 @@ import { EmployeeLoginComponent } from './employee-login/employee-login.componen
 import { SecurityLoginComponent } from './security-login/security-login.component';
 import { SearchemployeeComponent } from './searchemployee/searchemployee.component';
 import { AddsecurityComponent } from './addsecurity/addsecurity.component';
+import { ViewsecurityComponent } from './viewsecurity/viewsecurity.component';
 
 const approutes:Routes=[
   {
@@ -42,6 +43,9 @@ const approutes:Routes=[
   },
   {
     path:"addsec",component:AddsecurityComponent
+  },
+  {
+    path:"viewsec",component:ViewsecurityComponent
   }
   
   
@@ -58,7 +62,8 @@ const approutes:Routes=[
     EmployeeLoginComponent,
     SecurityLoginComponent,
     SearchemployeeComponent,
-    AddsecurityComponent
+    AddsecurityComponent,
+    ViewsecurityComponent
   ],
   imports: [
     BrowserModule,

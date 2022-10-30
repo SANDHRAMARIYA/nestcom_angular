@@ -1,0 +1,42 @@
+<app-admin-navbar></app-admin-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+         
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Security Code</th>
+        <th scope="col">Name</th>
+        <th scope="col">Date of Joining</th>
+        <th scope="col">Email</th>
+        <th scope="col">Password</th>
+        <th scope="col">Delete</th>
+
+
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of securityData">
+       
+
+        <td>{{i.id}}</td>
+        <td>{{i.security_code}}</td>
+        <td>{{i.name}}</td>
+        <td>{{i.doj}}</td>
+        <td>{{i.email}}</td>
+        <td>{{i.password}}</td>
+        <td><button class="btn btn-danger" (click)="deleteSec(i.security_code)">Delete</button></td>
+       
+
+      </tr>
+     
+    </tbody>
+  </table>
+
+        </div>
+    </div>
+</div>
