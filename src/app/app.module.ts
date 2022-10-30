@@ -12,6 +12,8 @@ import { AdmindashboardComponent } from './admindashboard/admindashboard.compone
 import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { EmpViewComponent } from './emp-view/emp-view.component';
+import { EmployeeLoginComponent } from './employee-login/employee-login.component';
+import { SecurityLoginComponent } from './security-login/security-login.component';
 
 const approutes:Routes=[
   {
@@ -24,7 +26,14 @@ const approutes:Routes=[
     path:"addEmp",component:AddEmployeeComponent
   },
   {
+
     path:"viewEmp",component:EmpViewComponent
+    },
+    {
+    path:"emp",component:EmployeeLoginComponent
+  },
+  {
+    path:"sec",component:SecurityLoginComponent
   }
   
   
@@ -37,7 +46,9 @@ const approutes:Routes=[
     AdmindashboardComponent,
     AddEmployeeComponent,
     NavbarComponent,
-    EmpViewComponent
+    EmpViewComponent,
+    EmployeeLoginComponent,
+    SecurityLoginComponent
   ],
   imports: [
     BrowserModule,
