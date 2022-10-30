@@ -1,0 +1,40 @@
+<app-admin-navbar></app-admin-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col sm-12 col md-12 col lg-12 col xl-12 col-xxl-12">
+            <h1 style="text-align: center;">Add Security</h1>
+<div class="row g g-4">
+    
+    <div class="col col-12 col sm-12 col md-12 col lg-12 col xl-12 col xxl-12">
+<label for="" class="form-label">Security Code</label>
+<input type="text" class="form-control" name="security_code" [(ngModel)]="security_code">
+
+    </div>
+    <div class="col col-12 col sm-12 col md-12 col lg-12 col xl-12 col xxl-12">
+
+        <label for="" class="form-label">Name</label>
+        <input type="text" class="form-control" name="name" [(ngModel)]="name">
+        
+            </div>
+    <div class="col col-12 col sm-12 col md-12 col lg-12 col xl-12 col xxl-12">
+        <label for="" class="form-label">Date of Joining</label>
+        <input type="datetime-local" class="form-control" name="doj" [(ngModel)]="doj">
+    </div>
+    <div class="col col-12 col sm-12 col md-12 col lg-12 col xl-12 col xxl-12">
+        <label for="" class="form-label">Email</label>
+        <input type="text" class="form-control" name="email" [(ngModel)]="email">
+    </div>
+    <div class="col col-12 col sm-12 col md-12 col lg-12 col xl-12 col xxl-12">
+        <label for="" class="form-label">Password</label>
+        <input type="password" name="password" [(ngModel)]="password" id="" class="form-control">
+    </div>
+    <div class="col col-12 col sm-12 col md-12 col lg-12 col xl-12 col xxl-12">
+       <button class="btn btn-success" (click)="readvalue()" [disabled]="status">Submit</button>
+    </div>
+</div>
+
+
+
+        </div>
+    </div>
+</div>
