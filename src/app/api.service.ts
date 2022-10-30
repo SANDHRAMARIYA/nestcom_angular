@@ -35,4 +35,8 @@ export class ApiService {
   securitylogin=(data:any)=>{
     return this.http.post("http://localhost:8080/loginsecurity",data)
   }
+
+  addsecurity=(data:any)=>{
+    return this.http.post("http://localhost:8080/addsecurity",data)
+  }
 }
