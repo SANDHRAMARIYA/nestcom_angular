@@ -22,6 +22,9 @@ const approutes:Routes=[
   },
   {
     path:"addEmp",component:AddEmployeeComponent
+  },
+  {
+    path:"viewEmp",component:EmpViewComponent
   }
   
   
