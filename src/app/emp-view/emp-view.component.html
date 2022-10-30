@@ -1,1 +1,48 @@
-<p>emp-view works!s</p>
+<app-admin-navbar></app-admin-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+         
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Employee Code</th>
+        <th scope="col">Employee Name</th>
+        <th scope="col">Employee Dob</th>
+        <th scope="col">Employee Joinig Date</th>
+        <th scope="col">Employee Address</th>
+        <th scope="col">Phone Number</th>
+        <th scope="col">Employee Designation</th>
+        <th scope="col">Employee Email</th>
+        <th scope="col">Password</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of empView">
+       
+
+        <td>{{i.empcode}}</td>
+        <td>{{i.name}}</td>
+        <td>{{i.dob}}</td>
+        <td>{{i.doj}}</td>
+        <td>{{i.address}}</td>
+        <td>{{i.phnum}}</td>
+        <td>{{i.designation}}</td>
+        <td>{{i.email}}</td>
+        <td>{{i.password}}</td>
+
+
+
+
+       <td> <button class="btn btn-primary" (click)="delete(i.empcode)">DELETE</button> </td>
+
+      </tr>
+     
+    </tbody>
+  </table>
+
+        </div>
+    </div>
+</div>
