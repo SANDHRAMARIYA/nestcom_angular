@@ -1,0 +1,56 @@
+<app-admin-navbar></app-admin-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+<div class="row g-4">
+    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <label for="" class="form-label">Security Code</label>
+<input type="text" class="form-control" name="security_code" [(ngModel)]="security_code">
+
+    </div>
+    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <button class="btn btn-success" (click)="readvalues()">Search</button>
+    </div>
+
+
+
+
+
+    <div *ngFor="let i of dataSearch">
+        
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <label for="" class="form-label">Security Code</label>
+            <input type="text" class="form-control" value="{{i.security_code}}" [(ngModel)]="i.security_code">
+            </div>
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <label for="" class="form-label">Name</label>
+                <input type="text" class="form-control" value="{{i.name}}" [(ngModel)]="i.name">
+                </div>
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <label for="" class="form-label">Date of Joining</label>
+            <input type="text" class="form-control" value="{{i.doj}}" [(ngModel)]="i.doj">
+            </div>
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <label for="" class="form-label">Email</label>
+            <input type="email" class="form-control" value="{{i.email}}" [(ngModel)]="i.email">
+            </div>
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <label for="" class="form-label">Password</label>
+            <input type="password" class="form-control" value="{{i.password}}" [(ngModel)]="i.password">
+            </div>
+            <br>
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <button class="btn btn-success" (click)="editSec()">Update</button>
+            </div>
+           
+           
+   
+    </div>
+       
+    </div>
+   
+            </div>
+        </div>
+    </div>
+   

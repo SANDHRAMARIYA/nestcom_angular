@@ -47,4 +47,12 @@ export class ApiService {
   deletesecurity=(data:any)=>{
     return this.http.post("http://localhost:8080/deletesecurity",data)
   }
+
+  searchsecurity=(data:any)=>{
+    return this.http.post("http://localhost:8080/searchsecurity",data)
+  }
+
+  updatesecurity=(data:any)=>{
+    return this.http.post("http://localhost:8080/editsecurity",data)
+  }
 }
