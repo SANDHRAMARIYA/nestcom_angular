@@ -18,6 +18,7 @@ import { SearchemployeeComponent } from './searchemployee/searchemployee.compone
 import { AddsecurityComponent } from './addsecurity/addsecurity.component';
 import { ViewsecurityComponent } from './viewsecurity/viewsecurity.component';
 import { SearchsecurityComponent } from './searchsecurity/searchsecurity.component';
+import { ApplyLeaveComponent } from './apply-leave/apply-leave.component';
 
 const approutes:Routes=[
   {
@@ -50,6 +51,9 @@ const approutes:Routes=[
   },
   {
     path:"searchsec",component:SearchsecurityComponent
+  },
+  {
+    path:"applyLeave",component:ApplyLeaveComponent
   }
   
   
@@ -68,7 +72,8 @@ const approutes:Routes=[
     SearchemployeeComponent,
     AddsecurityComponent,
     ViewsecurityComponent,
-    SearchsecurityComponent
+    SearchsecurityComponent,
+    ApplyLeaveComponent
   ],
   imports: [
     BrowserModule,

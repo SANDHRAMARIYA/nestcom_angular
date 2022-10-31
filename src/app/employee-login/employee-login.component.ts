@@ -26,8 +26,9 @@ readValues=()=>{
     (resp:any)=>{
       if (resp.length>0)
       {
-        localStorage.setItem("stored_name",resp[0].name)
-        localStorage.setItem("stored_id",resp[0].id)
+        localStorage.setItem("empcode",resp[0].empcode)
+        console.log(localStorage.getItem("empcode"));
+        localStorage.setItem("empname",resp[0].name)
         this.myRouter.navigate(["/applyLeave"])
       } else {
         alert("Invalid credentials")

@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+<h1 style="text-align: center;">Leave Application</h1>
+
+<div class="row g-4">
+ 
+ 
+    <div class="col col-12 col-sm-12 col-md-12 col-12 col-lg-12 col-xl-12 col-xxl-12">
+        <label for="" class="form-label">Leave Date</label>
+<input type="date" class="form-control" name="date" [(ngModel)]="date">
+    </div>
+
+    <div class="col col-12 col-sm-12 col-md-12 col-12 col-lg-12 col-xl-12 col-xxl-12">
+        <label for="" class="form-label">Reason</label>
+<input type="text" class="form-control" name="reason" [(ngModel)]="reason">
+    </div>
+    <div class="col col-12 col-sm-12 col-md-12 col-12 col-lg-12 col-xl-12 col-xxl-12">
+        <label for="" class="form-label">Apply date</label>
+            <input type="datetime-local" class="form-control" name="applydate" [(ngModel)]="applydate">
+        </div>
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <label for="" class="form-label">Leave Type</label>
+    <select name="type" [(ngModel)]="type" id="" class="form-control">
+        <option value="Sick Leave">Sick Leave</option>
+        <option value="General Leave">General Leave</option>
+        <option value="Function">Function</option>
+        <option value="Loss of Pay">Loss of Pay</option>
+       
+    
+    </select>  
+     </div>
+
+    <div class="col col-12 col-sm-12 col-md-12 col-12 col-lg-12 col-xl-12 col-xxl-12">
+<button class="btn btn-primary" (click)="applyLeave()">Submit</button>
+
+    </div>
+</div>
+
+        </div>
+    </div>
+</div>

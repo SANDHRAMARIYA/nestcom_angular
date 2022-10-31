@@ -55,4 +55,8 @@ export class ApiService {
   updatesecurity=(data:any)=>{
     return this.http.post("http://localhost:8080/editsecurity",data)
   }
+
+  applyLeave=(data:any)=>{
+    return this.http.post("http://localhost:8080/addLeave",data)
+  }
 }
