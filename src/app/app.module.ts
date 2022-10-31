@@ -22,6 +22,7 @@ import { ApplyLeaveComponent } from './apply-leave/apply-leave.component';
 import { EmployeeNavbarComponent } from './employee-navbar/employee-navbar.component';
 import { SecurityNavbarComponent } from './security-navbar/security-navbar.component';
 import { CheckinComponent } from './checkin/checkin.component';
+import { CheckOutComponent } from './check-out/check-out.component';
 
 const approutes:Routes=[
   {
@@ -60,6 +61,9 @@ const approutes:Routes=[
   },
   {
     path:"checkIn",component:CheckinComponent
+  },
+  {
+    path:"checkOut",component:CheckOutComponent
   }
   
   
@@ -82,7 +86,8 @@ const approutes:Routes=[
     ApplyLeaveComponent,
     EmployeeNavbarComponent,
     SecurityNavbarComponent,
-    CheckinComponent
+    CheckinComponent,
+    CheckOutComponent
   ],
   imports: [
     BrowserModule,
