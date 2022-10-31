@@ -25,6 +25,7 @@ import { CheckinComponent } from './checkin/checkin.component';
 import { CheckOutComponent } from './check-out/check-out.component';
 import { ViewlogComponent } from './viewlog/viewlog.component';
 import { ViewLogIdComponent } from './view-log-id/view-log-id.component';
+import { ViewleaveIdComponent } from './viewleave-id/viewleave-id.component';
 
 const approutes:Routes=[
   {
@@ -72,6 +73,9 @@ const approutes:Routes=[
   },
   {
     path:"viewLogId",component:ViewLogIdComponent
+  },
+  {
+    path:"viewleave",component:ViewleaveIdComponent
   }
   
   
@@ -97,7 +101,8 @@ const approutes:Routes=[
     CheckinComponent,
     CheckOutComponent,
     ViewlogComponent,
-    ViewLogIdComponent
+    ViewLogIdComponent,
+    ViewleaveIdComponent
   ],
   imports: [
     BrowserModule,

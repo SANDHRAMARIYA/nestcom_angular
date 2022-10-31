@@ -1,0 +1,46 @@
+<app-employee-navbar></app-employee-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+         
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Employee Name</th>
+        <th scope="col">Leave Date</th>
+        <th scope="col">Reason</th>
+        <th scope="col">Applied Date</th>
+        <th scope="col">Type</th>
+        <th scope="col">Status</th>
+       
+
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of leaveData">
+       
+
+        <td>{{i.name}}</td>
+        <td>{{i.date}}</td>
+        <td>{{i.reason}}</td>
+        <td>{{i.applydate}}</td>
+        <td>{{i.type}}</td>
+        <td *ngIf="i.status==0"><div class="alert alert-warning" role="alert">
+            Pending
+          </div></td>
+          <td *ngIf="i.status==1"><div class="alert alert-info" role="alert">
+           Approved
+          </div></td>
+          <td *ngIf="i.status== -1"><div class="alert alert-danger" role="alert">
+            Denied
+           </div></td>
+      </tr>
+     
+    </tbody>
+  </table>
+
+        </div>
+    </div>
+</div>
