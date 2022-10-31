@@ -24,8 +24,9 @@ readValues=()=>{
     (resp:any)=>{
       if (resp.length>0) {
    
-        localStorage.setItem("stored_name",resp[0].name)
-        localStorage.setItem("stored_id",resp[0].id)
+        localStorage.setItem("security_code",resp[0].id)
+        localStorage.setItem("security_name",resp[0].name)
+        console.log(localStorage.getItem("security_code"));
 this.myRouter.navigate(["/checkIn"])
        
       } else {
