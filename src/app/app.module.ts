@@ -23,6 +23,7 @@ import { EmployeeNavbarComponent } from './employee-navbar/employee-navbar.compo
 import { SecurityNavbarComponent } from './security-navbar/security-navbar.component';
 import { CheckinComponent } from './checkin/checkin.component';
 import { CheckOutComponent } from './check-out/check-out.component';
+import { ViewlogComponent } from './viewlog/viewlog.component';
 
 const approutes:Routes=[
   {
@@ -64,6 +65,9 @@ const approutes:Routes=[
   },
   {
     path:"checkOut",component:CheckOutComponent
+  },
+  {
+    path:"viewLogs",component:ViewlogComponent
   }
   
   
@@ -87,7 +91,8 @@ const approutes:Routes=[
     EmployeeNavbarComponent,
     SecurityNavbarComponent,
     CheckinComponent,
-    CheckOutComponent
+    CheckOutComponent,
+    ViewlogComponent
   ],
   imports: [
     BrowserModule,
