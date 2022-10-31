@@ -20,6 +20,7 @@ import { ViewsecurityComponent } from './viewsecurity/viewsecurity.component';
 import { SearchsecurityComponent } from './searchsecurity/searchsecurity.component';
 import { ApplyLeaveComponent } from './apply-leave/apply-leave.component';
 import { EmployeeNavbarComponent } from './employee-navbar/employee-navbar.component';
+import { SecurityNavbarComponent } from './security-navbar/security-navbar.component';
 
 const approutes:Routes=[
   {
@@ -75,7 +76,8 @@ const approutes:Routes=[
     ViewsecurityComponent,
     SearchsecurityComponent,
     ApplyLeaveComponent,
-    EmployeeNavbarComponent
+    EmployeeNavbarComponent,
+    SecurityNavbarComponent
   ],
   imports: [
     BrowserModule,
