@@ -13,13 +13,13 @@ export class CheckinComponent implements OnInit {
 
   empcode=""
 
-checkin=()=>{
+checkIn=()=>{
 let data={
   "empcode":this.empcode,
-  "login_security_code":localStorage.getItem('security_code')
+  "login_security_code":localStorage.getItem("security_code")
 }
-
-this.myapi.checkin(data).subscribe()
+console.log(data)
+this.myapi.checkIn(data).subscribe()
 this.empcode=""
 }
 
