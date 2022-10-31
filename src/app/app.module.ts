@@ -24,6 +24,7 @@ import { SecurityNavbarComponent } from './security-navbar/security-navbar.compo
 import { CheckinComponent } from './checkin/checkin.component';
 import { CheckOutComponent } from './check-out/check-out.component';
 import { ViewlogComponent } from './viewlog/viewlog.component';
+import { ViewLogIdComponent } from './view-log-id/view-log-id.component';
 
 const approutes:Routes=[
   {
@@ -68,6 +69,9 @@ const approutes:Routes=[
   },
   {
     path:"viewLogs",component:ViewlogComponent
+  },
+  {
+    path:"viewLogId",component:ViewLogIdComponent
   }
   
   
@@ -92,7 +96,8 @@ const approutes:Routes=[
     SecurityNavbarComponent,
     CheckinComponent,
     CheckOutComponent,
-    ViewlogComponent
+    ViewlogComponent,
+    ViewLogIdComponent
   ],
   imports: [
     BrowserModule,
