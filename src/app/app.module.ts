@@ -21,6 +21,7 @@ import { SearchsecurityComponent } from './searchsecurity/searchsecurity.compone
 import { ApplyLeaveComponent } from './apply-leave/apply-leave.component';
 import { EmployeeNavbarComponent } from './employee-navbar/employee-navbar.component';
 import { SecurityNavbarComponent } from './security-navbar/security-navbar.component';
+import { CheckinComponent } from './checkin/checkin.component';
 
 const approutes:Routes=[
   {
@@ -56,6 +57,9 @@ const approutes:Routes=[
   },
   {
     path:"applyLeave",component:ApplyLeaveComponent
+  },
+  {
+    path:"checkIn",component:CheckinComponent
   }
   
   
@@ -77,7 +81,8 @@ const approutes:Routes=[
     SearchsecurityComponent,
     ApplyLeaveComponent,
     EmployeeNavbarComponent,
-    SecurityNavbarComponent
+    SecurityNavbarComponent,
+    CheckinComponent
   ],
   imports: [
     BrowserModule,
