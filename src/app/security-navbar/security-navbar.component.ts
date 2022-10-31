@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-security-navbar',
@@ -7,8 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SecurityNavbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private myRouter:Router) { }
 
+
+  logout=()=>{
+    localStorage.clear
+    this.myRouter.navigate(["/sec"])
+  }
   ngOnInit(): void {
   }
 
